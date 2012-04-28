@@ -1,46 +1,27 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: Firmament Game Engine
+tagline: Haxe NME Game Engine
 ---
 {% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+Firmament is an open-source, 2 dimensional game engine developed for the easy creation of video games. It is currently under heavy development, so its feature list is constantly expanding. Its main features are:
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+Robust 2D physics engine for realistic 2-dimensional simulations. Make physics-based games like 'Angry Birds' with ease!
+* Easy game creation using full-featured API.
+* Haxe NME based - runs on virtually any platform - Flash, PC, Mac, iOS, android, HTM5, and more
+* Open source - Firmament is licensed under the GPL version 3. Download the engine and use it in your open source project for free.
+* To get started with Firmament, download it and check out the manual.
 
-## Update Author Attributes
+<hr>
+##Latest Posts:
+{% for post in site.posts limit:5 %}
 
-In `_config.yml` remember to specify your own data:
-    
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
-
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
-
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
-
-    $ rm -rf _posts/core-samples
-
-Here's a sample "posts list".
-
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
-
-## To-Do
-
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
+###[{{ post.title }}]({{ BASE_PATH }}{{ post.url }})
+{{ post.date | date_to_string }} 
+{{post.content |truncatewords:50}}
+[Read More...]({{ BASE_PATH }}{{ post.url }})
+<hr>
+{% endfor %}
 
 
