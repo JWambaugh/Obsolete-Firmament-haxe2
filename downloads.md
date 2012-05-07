@@ -38,4 +38,5 @@ For those who like to live on the bleeding edge, you can download the firmament 
 ##Firmament Editor
 There is now an editor under development to make developing maps easier than ever for Firmament. The editor can be built from the source on github, or you can get binaries here.
 
-* [windows]()
+* [Mac OSX](downloads/FirmamentEditor.dmg)
+* [Windows](downloads/FirmamentEditor.exe)

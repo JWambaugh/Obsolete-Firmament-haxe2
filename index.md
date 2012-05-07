@@ -19,8 +19,7 @@ Robust 2D physics engine for realistic 2-dimensional simulations. Make physics-b
 
 ###[{{ post.title }}]({{ BASE_PATH }}{{ post.url }})
 {{ post.date | date_to_string }} 
-{{post.content |truncatewords:50}}
-[Read More...]({{ BASE_PATH }}{{ post.url }})
+{{post.content }}
 <hr>
 {% endfor %}
 
