@@ -11,8 +11,7 @@ Robust 2D physics engine for realistic 2-dimensional simulations. Make physics-b
 * Easy game creation using full-featured API.
 * Haxe NME based - runs on virtually any platform - Flash, PC, Mac, iOS, android, HTM5, and more
 * Open source - Firmament is licensed under the GPL version 3. Download the engine and use it in your open source project for free.
-* To get started with Firmament, download it and check out the manual.
-
+* To get started with Firmament, [download it](downloads.html), and start playing today! 
 <hr>
 ##Latest Posts:
 {% for post in site.posts limit:5 %}
