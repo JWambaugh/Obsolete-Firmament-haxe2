@@ -22,7 +22,7 @@ And that's it! Haxelib should take care of the rest, and even install any prereq
 
 If you later want to update firmament, just run this:
 
-	haxlib upgrade
+	haxelib upgrade
 
 and haxelib will automatically upgrade firmament and everything else.
 
