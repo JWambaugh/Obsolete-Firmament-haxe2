@@ -13,14 +13,14 @@ Robust 2D physics engine for realistic 2-dimensional simulations. Make physics-b
 * Open source - Firmament is licensed under the GPL version 3. Download the engine and use it in your open source project for free.
 * To get started with Firmament, [download it](downloads.html), and start playing today! 
 
-<hr>
 ##Latest News:
 {% for post in site.tags.news limit:5 %}
+<hr>
 
 ###[{{ post.title }}]({{ BASE_PATH }}{{ post.url }})
 {{ post.date | date_to_string }} 
 {{post.content }}
-<hr>
+[Vew Article/Comments...]({{ BASE_PATH }}{{ post.url }})
 {% endfor %}
 
 
