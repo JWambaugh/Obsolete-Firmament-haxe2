@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Firmament Editor, Haxelib"
+title: "New Firmament Editor, Firmament on Haxelib"
 description: ""
 category: Editor
-tags: [firmament,editor]
+tags: [firmament, editor]
 ---
 {% include JB/setup %}
 
