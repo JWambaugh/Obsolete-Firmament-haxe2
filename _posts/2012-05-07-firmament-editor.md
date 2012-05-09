@@ -3,7 +3,7 @@ layout: post
 title: "New Firmament Editor, Firmament on Haxelib"
 description: ""
 category: Editor
-tags: [firmament, editor]
+tags: [firmament, editor, news]
 ---
 {% include JB/setup %}
 

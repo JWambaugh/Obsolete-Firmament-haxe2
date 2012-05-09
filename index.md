@@ -15,7 +15,7 @@ Robust 2D physics engine for realistic 2-dimensional simulations. Make physics-b
 
 <hr>
 ##Latest News:
-{% for post in site.posts limit:5 %}
+{% for post in site.tags.news limit:5 %}
 
 ###[{{ post.title }}]({{ BASE_PATH }}{{ post.url }})
 {{ post.date | date_to_string }} 
