@@ -1,0 +1,20 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|Android" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="lib/firmament/ui/FFileSelector.hx">
+    <Files>
+      <File FileName="../lib/firmament/ui/FWidget.hx" Line="19" Column="2" />
+      <File FileName="../lib/com/firmamentengine/firmamenteditor/FirmamentEditor.hx" Line="128" Column="42" />
+      <File FileName="FirmamentEditor.nmml" Line="32" Column="49" />
+      <File FileName="lib/firmament/ui/FFileSelector.hx" Line="20" Column="1" />
+      <File FileName="../lib/firmament/ui/FLineEdit.hx" Line="11" Column="57" />
+      <File FileName="../lib/firmament/ui/FScroller.hx" Line="56" Column="56" />
+      <File FileName="../lib/firmament/ui/FSmallButton.hx" Line="12" Column="51" />
+      <File FileName="../lib/firmament/ui/FButton.hx" Line="24" Column="63" />
+      <File FileName="../lib/firmament/ui/FTextField.hx" Line="21" Column="59" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

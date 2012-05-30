@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Android</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7CA6C15E-0A06-4ACC-A815-9D1D73928B6E}</ProjectGuid>
+    <TargetNMMLFile>FirmamentEditor.nmml</TargetNMMLFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Android' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|BlackBerry' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Flash' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|HTML5' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iOS' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.</OutputPath>
+    <AdditionalArguments>-simulator</AdditionalArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Linux' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Mac' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|webOS' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Windows' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Android' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|BlackBerry' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Flash' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|HTML5' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iOS' ">
+    <OutputPath>.</OutputPath>
+    <AdditionalArguments>-simulator</AdditionalArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Linux' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Mac' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|webOS' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Windows' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="FirmamentEditor.nmml" />
+    <Compile Include="..\lib\haxelib.xml">
+      <Link>lib\haxelib.xml</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\B2AABB.hx">
+      <Link>lib\box2D\collision\B2AABB.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\B2Collision.hx">
+      <Link>lib\box2D\collision\B2Collision.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\B2ContactID.hx">
+      <Link>lib\box2D\collision\B2ContactID.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\B2ContactPoint.hx">
+      <Link>lib\box2D\collision\B2ContactPoint.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\B2Distance.hx">
+      <Link>lib\box2D\collision\B2Distance.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\B2DistanceInput.hx">
+      <Link>lib\box2D\collision\B2DistanceInput.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\B2DistanceOutput.hx">
+      <Link>lib\box2D\collision\B2DistanceOutput.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\B2DistanceProxy.hx">
+      <Link>lib\box2D\collision\B2DistanceProxy.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\B2DynamicTree.hx">
+      <Link>lib\box2D\collision\B2DynamicTree.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\B2DynamicTreeBroadPhase.hx">
+      <Link>lib\box2D\collision\B2DynamicTreeBroadPhase.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\B2DynamicTreeNode.hx">
+      <Link>lib\box2D\collision\B2DynamicTreeNode.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\B2DynamicTreePair.hx">
+      <Link>lib\box2D\collision\B2DynamicTreePair.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\B2Manifold.hx">
+      <Link>lib\box2D\collision\B2Manifold.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\B2ManifoldPoint.hx">
+      <Link>lib\box2D\collision\B2ManifoldPoint.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\B2OBB.hx">
+      <Link>lib\box2D\collision\B2OBB.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\B2RayCastInput.hx">
+      <Link>lib\box2D\collision\B2RayCastInput.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\B2RayCastOutput.hx">
+      <Link>lib\box2D\collision\B2RayCastOutput.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\B2SeparationFunction.hx">
+      <Link>lib\box2D\collision\B2SeparationFunction.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\B2Simplex.hx">
+      <Link>lib\box2D\collision\B2Simplex.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\B2SimplexCache.hx">
+      <Link>lib\box2D\collision\B2SimplexCache.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\B2SimplexVertex.hx">
+      <Link>lib\box2D\collision\B2SimplexVertex.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\B2TOIInput.hx">
+      <Link>lib\box2D\collision\B2TOIInput.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\B2TimeOfImpact.hx">
+      <Link>lib\box2D\collision\B2TimeOfImpact.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\B2WorldManifold.hx">
+      <Link>lib\box2D\collision\B2WorldManifold.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\ClipVertex.hx">
+      <Link>lib\box2D\collision\ClipVertex.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\Features.hx">
+      <Link>lib\box2D\collision\Features.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\IBroadPhase.hx">
+      <Link>lib\box2D\collision\IBroadPhase.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\b2Bound.as">
+      <Link>lib\box2D\collision\b2Bound.as</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\b2BoundValues.as">
+      <Link>lib\box2D\collision\b2BoundValues.as</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\b2BroadPhase.as">
+      <Link>lib\box2D\collision\b2BroadPhase.as</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\b2Pair.as">
+      <Link>lib\box2D\collision\b2Pair.as</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\b2PairManager.as">
+      <Link>lib\box2D\collision\b2PairManager.as</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\b2Point.as">
+      <Link>lib\box2D\collision\b2Point.as</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\b2Proxy.as">
+      <Link>lib\box2D\collision\b2Proxy.as</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\b2Segment.as">
+      <Link>lib\box2D\collision\b2Segment.as</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\shapes\B2CircleShape.hx">
+      <Link>lib\box2D\collision\shapes\B2CircleShape.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\shapes\B2EdgeShape.hx">
+      <Link>lib\box2D\collision\shapes\B2EdgeShape.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\shapes\B2MassData.hx">
+      <Link>lib\box2D\collision\shapes\B2MassData.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\shapes\B2PolygonShape.hx">
+      <Link>lib\box2D\collision\shapes\B2PolygonShape.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\shapes\B2Shape.hx">
+      <Link>lib\box2D\collision\shapes\B2Shape.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\collision\shapes\b2EdgeChainDef.as">
+      <Link>lib\box2D\collision\shapes\b2EdgeChainDef.as</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\common\B2Color.hx">
+      <Link>lib\box2D\common\B2Color.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\common\B2Settings.hx">
+      <Link>lib\box2D\common\B2Settings.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\common\b2internal.as">
+      <Link>lib\box2D\common\b2internal.as</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\common\math\B2Mat22.hx">
+      <Link>lib\box2D\common\math\B2Mat22.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\common\math\B2Mat33.hx">
+      <Link>lib\box2D\common\math\B2Mat33.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\common\math\B2Math.hx">
+      <Link>lib\box2D\common\math\B2Math.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\common\math\B2Sweep.hx">
+      <Link>lib\box2D\common\math\B2Sweep.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\common\math\B2Transform.hx">
+      <Link>lib\box2D\common\math\B2Transform.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\common\math\B2Vec2.hx">
+      <Link>lib\box2D\common\math\B2Vec2.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\common\math\B2Vec3.hx">
+      <Link>lib\box2D\common\math\B2Vec3.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\B2Body.hx">
+      <Link>lib\box2D\dynamics\B2Body.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\B2BodyDef.hx">
+      <Link>lib\box2D\dynamics\B2BodyDef.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\B2ContactFilter.hx">
+      <Link>lib\box2D\dynamics\B2ContactFilter.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\B2ContactImpulse.hx">
+      <Link>lib\box2D\dynamics\B2ContactImpulse.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\B2ContactListener.hx">
+      <Link>lib\box2D\dynamics\B2ContactListener.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\B2ContactManager.hx">
+      <Link>lib\box2D\dynamics\B2ContactManager.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\B2DebugDraw.hx">
+      <Link>lib\box2D\dynamics\B2DebugDraw.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\B2DestructionListener.hx">
+      <Link>lib\box2D\dynamics\B2DestructionListener.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\B2FilterData.hx">
+      <Link>lib\box2D\dynamics\B2FilterData.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\B2Fixture.hx">
+      <Link>lib\box2D\dynamics\B2Fixture.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\B2FixtureDef.hx">
+      <Link>lib\box2D\dynamics\B2FixtureDef.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\B2Island.hx">
+      <Link>lib\box2D\dynamics\B2Island.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\B2TimeStep.hx">
+      <Link>lib\box2D\dynamics\B2TimeStep.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\B2World.hx">
+      <Link>lib\box2D\dynamics\B2World.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\contacts\B2CircleContact.hx">
+      <Link>lib\box2D\dynamics\contacts\B2CircleContact.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\contacts\B2Contact.hx">
+      <Link>lib\box2D\dynamics\contacts\B2Contact.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\contacts\B2ContactConstraint.hx">
+      <Link>lib\box2D\dynamics\contacts\B2ContactConstraint.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\contacts\B2ContactConstraintPoint.hx">
+      <Link>lib\box2D\dynamics\contacts\B2ContactConstraintPoint.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\contacts\B2ContactEdge.hx">
+      <Link>lib\box2D\dynamics\contacts\B2ContactEdge.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\contacts\B2ContactFactory.hx">
+      <Link>lib\box2D\dynamics\contacts\B2ContactFactory.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\contacts\B2ContactRegister.hx">
+      <Link>lib\box2D\dynamics\contacts\B2ContactRegister.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\contacts\B2ContactSolver.hx">
+      <Link>lib\box2D\dynamics\contacts\B2ContactSolver.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\contacts\B2EdgeAndCircleContact.hx">
+      <Link>lib\box2D\dynamics\contacts\B2EdgeAndCircleContact.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\contacts\B2PolyAndCircleContact.hx">
+      <Link>lib\box2D\dynamics\contacts\B2PolyAndCircleContact.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\contacts\B2PolyAndEdgeContact.hx">
+      <Link>lib\box2D\dynamics\contacts\B2PolyAndEdgeContact.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\contacts\B2PolygonContact.hx">
+      <Link>lib\box2D\dynamics\contacts\B2PolygonContact.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\contacts\B2PositionSolverManifold.hx">
+      <Link>lib\box2D\dynamics\contacts\B2PositionSolverManifold.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\contacts\b2ContactResult.as">
+      <Link>lib\box2D\dynamics\contacts\b2ContactResult.as</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\contacts\b2NullContact.as">
+      <Link>lib\box2D\dynamics\contacts\b2NullContact.as</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\controllers\B2BuoyancyController.hx">
+      <Link>lib\box2D\dynamics\controllers\B2BuoyancyController.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\controllers\B2ConstantAccelController.hx">
+      <Link>lib\box2D\dynamics\controllers\B2ConstantAccelController.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\controllers\B2ConstantForceController.hx">
+      <Link>lib\box2D\dynamics\controllers\B2ConstantForceController.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\controllers\B2Controller.hx">
+      <Link>lib\box2D\dynamics\controllers\B2Controller.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\controllers\B2ControllerEdge.hx">
+      <Link>lib\box2D\dynamics\controllers\B2ControllerEdge.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\controllers\B2GravityController.hx">
+      <Link>lib\box2D\dynamics\controllers\B2GravityController.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\controllers\B2TensorDampingController.hx">
+      <Link>lib\box2D\dynamics\controllers\B2TensorDampingController.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\joints\B2DistanceJoint.hx">
+      <Link>lib\box2D\dynamics\joints\B2DistanceJoint.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\joints\B2DistanceJointDef.hx">
+      <Link>lib\box2D\dynamics\joints\B2DistanceJointDef.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\joints\B2FrictionJoint.hx">
+      <Link>lib\box2D\dynamics\joints\B2FrictionJoint.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\joints\B2FrictionJointDef.hx">
+      <Link>lib\box2D\dynamics\joints\B2FrictionJointDef.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\joints\B2GearJoint.hx">
+      <Link>lib\box2D\dynamics\joints\B2GearJoint.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\joints\B2GearJointDef.hx">
+      <Link>lib\box2D\dynamics\joints\B2GearJointDef.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\joints\B2Jacobian.hx">
+      <Link>lib\box2D\dynamics\joints\B2Jacobian.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\joints\B2Joint.hx">
+      <Link>lib\box2D\dynamics\joints\B2Joint.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\joints\B2JointDef.hx">
+      <Link>lib\box2D\dynamics\joints\B2JointDef.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\joints\B2JointEdge.hx">
+      <Link>lib\box2D\dynamics\joints\B2JointEdge.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\joints\B2LineJoint.hx">
+      <Link>lib\box2D\dynamics\joints\B2LineJoint.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\joints\B2LineJointDef.hx">
+      <Link>lib\box2D\dynamics\joints\B2LineJointDef.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\joints\B2MouseJoint.hx">
+      <Link>lib\box2D\dynamics\joints\B2MouseJoint.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\joints\B2MouseJointDef.hx">
+      <Link>lib\box2D\dynamics\joints\B2MouseJointDef.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\joints\B2PrismaticJoint.hx">
+      <Link>lib\box2D\dynamics\joints\B2PrismaticJoint.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\joints\B2PrismaticJointDef.hx">
+      <Link>lib\box2D\dynamics\joints\B2PrismaticJointDef.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\joints\B2PulleyJoint.hx">
+      <Link>lib\box2D\dynamics\joints\B2PulleyJoint.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\joints\B2PulleyJointDef.hx">
+      <Link>lib\box2D\dynamics\joints\B2PulleyJointDef.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\joints\B2RevoluteJoint.hx">
+      <Link>lib\box2D\dynamics\joints\B2RevoluteJoint.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\joints\B2RevoluteJointDef.hx">
+      <Link>lib\box2D\dynamics\joints\B2RevoluteJointDef.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\joints\B2WeldJoint.hx">
+      <Link>lib\box2D\dynamics\joints\B2WeldJoint.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\box2D\dynamics\joints\B2WeldJointDef.hx">
+      <Link>lib\box2D\dynamics\joints\B2WeldJointDef.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\com\firmamentengine\firmamenteditor\FEditorEntity.hx">
+      <Link>lib\com\firmamentengine\firmamenteditor\FEditorEntity.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\com\firmamentengine\firmamenteditor\FirmamentEditor.hx">
+      <Link>lib\com\firmamentengine\firmamenteditor\FirmamentEditor.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\com\firmamentengine\firmamenteditor\ResourceLoader.hx">
+      <Link>lib\com\firmamentengine\firmamenteditor\ResourceLoader.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\com\firmamentengine\firmamenteditor\ui\EntityItem.hx">
+      <Link>lib\com\firmamentengine\firmamenteditor\ui\EntityItem.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\com\firmamentengine\firmamenteditor\ui\EntitySelector.hx">
+      <Link>lib\com\firmamentengine\firmamenteditor\ui\EntitySelector.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\com\firmamentengine\firmamenteditor\ui\EntityWindow.hx">
+      <Link>lib\com\firmamentengine\firmamenteditor\ui\EntityWindow.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\com\firmamentengine\firmamenteditor\ui\ProjectSettings.hx">
+      <Link>lib\com\firmamentengine\firmamenteditor\ui\ProjectSettings.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\com\firmamentengine\firmamenteditor\ui\ToolBar.hx">
+      <Link>lib\com\firmamentengine\firmamenteditor\ui\ToolBar.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\core\FCamera.hx">
+      <Link>lib\firmament\core\FCamera.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\core\FEntity.hx">
+      <Link>lib\firmament\core\FEntity.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\core\FGame.hx">
+      <Link>lib\firmament\core\FGame.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\core\FInput.hx">
+      <Link>lib\firmament\core\FInput.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\core\FPhysicsCollisionEvent.hx">
+      <Link>lib\firmament\core\FPhysicsCollisionEvent.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\core\FPhysicsEntity.hx">
+      <Link>lib\firmament\core\FPhysicsEntity.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\core\FPhysicsWorld.hx">
+      <Link>lib\firmament\core\FPhysicsWorld.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\core\FRenderable.hx">
+      <Link>lib\firmament\core\FRenderable.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\core\FRenderer.hx">
+      <Link>lib\firmament\core\FRenderer.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\core\FSpriteRenderer.hx">
+      <Link>lib\firmament\core\FSpriteRenderer.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\core\FTilesheetRenderer.hx">
+      <Link>lib\firmament\core\FTilesheetRenderer.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\core\FVector.hx">
+      <Link>lib\firmament\core\FVector.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\core\FWireframeRenderer.hx">
+      <Link>lib\firmament\core\FWireframeRenderer.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\core\FWorld.hx">
+      <Link>lib\firmament\core\FWorld.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\core\FWorldPositional.hx">
+      <Link>lib\firmament\core\FWorldPositional.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\core\FWorldPositionalInterface.hx">
+      <Link>lib\firmament\core\FWorldPositionalInterface.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\ui\FButton.hx">
+      <Link>lib\firmament\ui\FButton.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\ui\FDialog.hx">
+      <Link>lib\firmament\ui\FDialog.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\ui\FFloatEntry.hx">
+      <Link>lib\firmament\ui\FFloatEntry.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\ui\FLineEdit.hx">
+      <Link>lib\firmament\ui\FLineEdit.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\ui\FScroller.hx">
+      <Link>lib\firmament\ui\FScroller.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\ui\FSmallButton.hx">
+      <Link>lib\firmament\ui\FSmallButton.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\ui\FStyle.hx">
+      <Link>lib\firmament\ui\FStyle.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\ui\FStyleHelper.hx">
+      <Link>lib\firmament\ui\FStyleHelper.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\ui\FTextField.hx">
+      <Link>lib\firmament\ui\FTextField.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\ui\FTextLabel.hx">
+      <Link>lib\firmament\ui\FTextLabel.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\ui\FWidget.hx">
+      <Link>lib\firmament\ui\FWidget.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\ui\FWindow.hx">
+      <Link>lib\firmament\ui\FWindow.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\ui\layout\FHBox.hx">
+      <Link>lib\firmament\ui\layout\FHBox.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\ui\layout\FLayout.hx">
+      <Link>lib\firmament\ui\layout\FLayout.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\ui\layout\FVBox.hx">
+      <Link>lib\firmament\ui\layout\FVBox.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\utils\FAutoCrop.hx">
+      <Link>lib\firmament\utils\FAutoCrop.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\utils\FBitmapTracer.hx">
+      <Link>lib\firmament\utils\FBitmapTracer.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\utils\FMisc.hx">
+      <Link>lib\firmament\utils\FMisc.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\utils\FPolySimplifier.hx">
+      <Link>lib\firmament\utils\FPolySimplifier.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\utils\FTracerVertex.hx">
+      <Link>lib\firmament\utils\FTracerVertex.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\utils\FTriangulator.hx">
+      <Link>lib\firmament\utils\FTriangulator.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\utils\loader\FEntityLoader.hx">
+      <Link>lib\firmament\utils\loader\FEntityLoader.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\utils\loader\FEntitySerializerInterface.hx">
+      <Link>lib\firmament\utils\loader\FEntitySerializerInterface.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\utils\loader\serializer\FJsonSerializer.hx">
+      <Link>lib\firmament\utils\loader\serializer\FJsonSerializer.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\utils\loader\serializer\FSerializerFactory.hx">
+      <Link>lib\firmament\utils\loader\serializer\FSerializerFactory.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\utils\loader\serializer\FSerializerInterface.hx">
+      <Link>lib\firmament\utils\loader\serializer\FSerializerInterface.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\utils\state\FState.hx">
+      <Link>lib\firmament\utils\state\FState.hx</Link>
+    </Compile>
+    <Compile Include="..\lib\firmament\utils\state\FStateMachine.hx">
+      <Link>lib\firmament\utils\state\FStateMachine.hx</Link>
+    </Compile>
+    <Compile Include="lib\firmament\ui\FFileSelector.hx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib\" />
+  </ItemGroup>
+</Project>

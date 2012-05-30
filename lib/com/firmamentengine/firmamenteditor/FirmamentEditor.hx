@@ -59,7 +59,10 @@ class FirmamentEditor
 		trace(executableDir);
 		//set styles
 		
-		#if (mac)
+		
+		
+		#if (loadFont)
+		trace('mac!');
 		var font = Assets.getFont ("assets/MILF____.TTF");
 		FStyle.setStyleObj("",{
 			fontName:font.fontName

@@ -29,6 +29,8 @@
 	<ndll name="zlib" />
 	<ndll name="nme" haxelib="nme" />
 	
+	<haxedef name="loadFont" unless="target_windows" />
+	
 	<!-- Windows app: hide console -->
 	<!--<setenv name="no_console" value="1" />-->
 </project>

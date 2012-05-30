@@ -18,7 +18,7 @@ class FTextField extends FWidget
 	public var  textWidth(getTextWidth , null):Float;
 	public var multiline(getMultiline, setMultiline):Bool;
 	
-	public function new(?text:String="", ?x:Int=0, ?y:Int=0, ?width:Int=100, ?classes:Array<String>=null) 
+	public function new(?text:String="", ?x:Float=0, ?y:Float=0, ?width:Int=100, ?classes:Array<String>=null) 
 	{
 		super();
 		this.textField = new TextField();

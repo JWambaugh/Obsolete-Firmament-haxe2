@@ -9,7 +9,7 @@ import nme.events.Event;
 class FSmallButton extends FButton
 {
 
-	public function new(?text:String="",?x=0,?y=0,?onClick:MouseEvent -> Void=null) 
+	public function new(?text:String="",?x=0.0,?y=0.0,?onClick:MouseEvent -> Void=null) 
 	{
 		super(text, x, y,onClick);
 		this.regularColor = 0xCCEEFF;
