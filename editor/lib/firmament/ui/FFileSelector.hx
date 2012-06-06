@@ -10,9 +10,15 @@ import FScroller;
  */
 class FFileSelector extends FWidget {
 	
+	var fileList:Array<String>;
+	var scroller: FScroller;
+	var canvas:Sprite;
 	public function new () {
 		
-		
+		fileList = new Array();
+		fileList.push("file1");
+		fileList.push("file2");
+		scroller = new FScroller()
 		
 	}		
 
