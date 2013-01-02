@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Version 2 Released!"
-description: "Firmament 2.0 has been released!
+description: "Firmament 2.0 has been released!"
 category: News
 tags: [firmament, news]
 ---
