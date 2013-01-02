@@ -23,6 +23,8 @@ Version 2.0 brings many large changes to the APIs, making the engine more flixbi
 * Fully functional wireframe renderer
 * Box2d Joints - Connect multiple entities together using joints!
 * Fully functional [Texture Mapper](http://www.codeandweb.com/texturepacker) plugin for automatic generation of tilesheet .json files
-* API documentation
+* Full [API documentation](http://martamius.github.com/Firmament.hx/docs/)
 
 And many many more changes and bug fixes! Check out the [github page](https://github.com/martamius/Firmament.hx/commits/master) for details on all the changes.
+
+[Download](http://martamius.github.com/Firmament.hx/downloads.html) Firmament Version 2 today and start making some great games!
