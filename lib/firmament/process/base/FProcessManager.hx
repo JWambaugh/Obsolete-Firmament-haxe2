@@ -56,7 +56,7 @@ class FProcessManager extends nme.events.EventDispatcher
 		_iteration++;
 		for (p in _processQueue) {
 			if(!p.isComplete()){
-				p.step();
+				p.doStep();
 			}
 		}
 		//clean up left over processes every 10 steps

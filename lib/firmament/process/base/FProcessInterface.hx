@@ -18,6 +18,10 @@ interface FProcessInterface
 	 */
 	public function step():Void;
 	
+	/**
+	* this is called by the process manager for each step. Usually this just calls step(),unless multithreaded.
+	*/ 
+	public function doStep():Void;
 	
 	/**
 	 * Should return true if the process is done and may be removed from the queue.

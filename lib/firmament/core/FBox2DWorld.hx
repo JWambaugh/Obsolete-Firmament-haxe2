@@ -16,6 +16,11 @@ import firmament.event.FPhysicsCollisionEvent;
 import firmament.ui.FDialog;
 import nme.events.Event;
 import firmament.util.FConfigHelper;
+
+#if(cpp)
+import cpp.vm.Mutex;
+#end
+
 /**
  * ...
  * @author Jordan Wambaughz
@@ -23,10 +28,13 @@ import firmament.util.FConfigHelper;
 
 class FPhysicsWorldContactListener extends B2ContactListener {
 	var world:FBox2DWorld;
+
+	
 	
 	public function new(world) {
 		this.world = world;
 		super();
+		
 	}
 
 
@@ -69,11 +77,19 @@ class FBox2DWorld extends FWorld
 	
 	var _b2world:B2World;
 	var _inStep:Bool;
+	#if(cpp)
+	var _mutex:Mutex;
+	#end
 	
 	private var deleteQueue:Array<FEntity>;
 	public function new() 
 	{
 		super();
+
+		#if(cpp)
+		_mutex = new Mutex();
+		#end
+
 		_inStep=false;
 		this._b2world = new B2World(new B2Vec2(0,0), true);
 		this.deleteQueue = new Array<FEntity>();
@@ -87,6 +103,9 @@ class FBox2DWorld extends FWorld
 	}
 	
 	override public function getEntitiesInBox(topLeftX:Float,topLeftY:Float,bottomRightX:Float,bottomRightY:Float):Array<FEntity>{
+		#if(cpp)
+		_mutex.acquire();
+		#end
 		var selectEntities:Array<FEntity> = new Array<FEntity>();
 		var query = new B2AABB();
 		
@@ -97,7 +116,9 @@ class FBox2DWorld extends FWorld
 			selectEntities.push(cast(fixture.getBody().getUserData(),FBox2DComponent).getEntity());
 			return true;
 		},query);
-	  
+	  	#if(cpp)
+		_mutex.release();
+		#end
 		return selectEntities;
 	}
 	
@@ -149,6 +170,9 @@ class FBox2DWorld extends FWorld
 	
 	
 	override public function step():Void {
+		#if(cpp)
+		_mutex.acquire();
+		#end
 		_inStep = true;
 		this._b2world.step(this.getTimeSinceLastStep(), 10, 10);
 		this._b2world.clearForces();
@@ -169,7 +193,9 @@ class FBox2DWorld extends FWorld
 		while((ent=this.deleteQueue.shift())!=null) {
 			this.deleteEntity(ent);
 		}
-		
+		#if(cpp)
+		_mutex.release();
+		#end
 		
 		
 	}

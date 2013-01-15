@@ -14,12 +14,13 @@ class FProcess extends nme.events.EventDispatcher, implements FProcessInterface
 	var _isComplete:Bool;
 	var _isRunning:Bool;
 	var _manager:FProcessManager;
-
+	
 	public function new() 
 	{
 		super();
 		_isComplete = false;
 		_isRunning = false;
+		
 	}
 	
 	
@@ -35,14 +36,19 @@ class FProcess extends nme.events.EventDispatcher, implements FProcessInterface
 	 * Called after each step. This method should do a bit of work and then finish. Each step should not be too long.
 	 */
 	public function step():Void {
+		throw('this must be extended in base class');
+		
+	}
+	
+	public function doStep(){
+		this.step();
 		if(_isComplete){
 			this.dispatchEvent(new Event(FProcess.COMPLETE));
 		}
 	}
 	
-	
 	/**
-	 * Celled if the process is aborted before it is completed.
+	 * Called if the process is aborted before it is completed.
 	 */
 	public function beforeAbort():Bool {
 		return true;
